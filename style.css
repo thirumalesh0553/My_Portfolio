@@ -1,0 +1,615 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color:white;
+ 
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+  background-color:rgba(4,97,105);
+  list-style: none;
+  align-items: center;
+  padding: 0 50px;
+  margin:0px;
+  height:60px;
+  top:0;
+
+}
+.left{
+  color:white;
+   font-size: 1.5rem;
+  font-weight: bold;
+}
+.right ul{
+  display:flex;
+  list-style: none;
+  color:white;
+  gap: 20px;
+}
+.right ul li a{
+   text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+
+}
+.right ul li a:hover{
+  color:lightblue;
+}
+
+.section1{
+  display:flex;
+  position:relative;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  padding-top: 150px;
+  margin-left: 75px;
+  margin-right: 100px;
+  overflow: hidden;
+}
+
+#section-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#myname{
+  color:aqua;
+  font-size: 35px;
+}
+#typedelement{
+  color:peru;
+  font-size: 45px;
+}
+#p1{
+  font-size: 30px;
+}
+#im{
+  font-size: 30px;
+}
+#t1{
+  font-size: 30px;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }       /* start at normal position */
+  50% { transform: translateY(-20px); } /* move image UP by 20px */
+  75% { transform: translatex(-30px);}
+  100% { transform: translateY(0); }     /* back to normal */
+}
+
+#left-section1{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items:column;
+ height:auto; 
+}
+
+#right-section1{
+  display:flex;
+  justify-content: space-between;
+  right:50px;
+ 
+  
+}
+.java-image{
+   height:350px;
+  width:auto;
+   animation:float 3s ease-in-out infinite;
+}
+
+.section2{ 
+  margin-top: 200px;
+  height:400px;
+  margin-left:40px;
+  margin-right:40px;
+}
+.main-heading{
+  text-align:center;
+  justify-content: center;
+  font-size:50px
+
+}
+
+.side-heading{
+  font-size: 30px;
+  color:antiquewhite;
+  padding-left:20px;
+}
+
+.profile-summary{
+  display:flex;
+  justify-content: space-between;
+  padding-left:20px;
+ 
+  
+}
+.my-image{
+  width:200 px;
+  height:200px;
+  object-fit:fill;
+  border-radius: 50%;   /* Makes the image circular */
+  border: 4px solid #333;
+}
+
+.right-profile{
+  position:relative;
+  left:40px;
+  top:45px;
+  font-size:18px ;
+  padding-right:40px;
+  font-family:' Arial', sans-serif;
+  text-align: justify;
+}
+
+.section3{
+ /* background-color:coral;*/
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#edu{
+  text-align: center;
+  font-size:50px ;
+}
+.h2-edu{
+  color:coral;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card b {
+  font-weight: 600;
+}
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+#cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+    border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card{
+   font-family: 'Arial', sans-serif;
+   height:200px;
+   width:400px;
+   text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color:#333;
+      border: 2px solid #333 ; 
+      border-radius:10px;   
+      padding-top: 20px; 
+      font-family: Arial, sans-serif;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(0,0,0,0.1);
+    background: black;
+    border:none;
+}
+
+.section4{
+  margin-top:100px ;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sec4-main-heading{
+  text-align:center;
+  font-size: 50px;
+}
+
+.portfolio-img{
+  height:200px;
+  width:400px;
+  padding-top:30px ;
+  border-radius:12px;
+}
+.hotel-img{
+  height:200px;
+  width:400px;
+  padding-top:30px ;
+  border-radius:12px;
+}
+.hospital-img{
+  height:200px;
+  width:400px;
+  padding-top:30px ;
+  border-radius:12px;
+}
+
+.proj-cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  border-radius:12px;
+ 
+}
+.proj-card{
+  font-family: 'Arial', sans-serif;
+  height:550px;
+  width:450px;
+   background-color: blueviolet;
+   text-align: center;
+   font-family: ' Arial', sans-serif;
+   font-size:15px;
+    background-color:#333;
+      border: 2px solid #333 ; 
+      border-radius:10px; 
+
+}
+.proj-card:hover{
+  transform: translateY(-10px);
+  background: black;
+  border:none;
+}
+
+.section4-p{
+  text-align:justify;
+}
+.section5{
+  margin-top:100px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.skill-head2{
+  text-align: center;
+  font-size: 50px;
+}
+.side-heading-skills{
+  font-size: 30px;
+  padding-left: 80px;
+}
+.skill h2{
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 16px;
+
+}
+.progress-bar{
+  background:#959595;
+  width:500px;
+  height:10px;
+  border-radius: 5px;
+}
+
+  .progress-bar div{
+    height:10px;
+    border-radius: 5px ;
+  }
+  .progress-bar div span{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background: #222;
+    float:right;
+    margin-top: -15px;
+    margin-right:-20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.java{
+    background-color:rgb(35, 196, 233);
+    animation:java 1s linear forwards;
+  }
+  .java span{
+    border:1px solid rgb(35,196,233);
+  }
+  @keyframes java{
+    100%{
+      width:90%
+    }
+  }
+  .html{
+    background-color:crimson;
+    animation:html 1s linear forwards;
+  }
+  .html span{
+    border:1px solid rgb(220,20,60);
+  }
+  @keyframes html{
+    100%{
+      width:95%
+    }
+  }
+   .CSS{
+    background-color:darkgoldenrod;
+    animation:CSS 1s linear forwards;
+  }
+  .CSS span{
+    border:1px solid rgb(184,134,11);
+  }
+   @keyframes CSS{
+    100%{
+      width:95%
+    }
+  }
+  .javascript{
+    background-color: blueviolet;
+    animation:javascript 1s linear forwards;
+  }
+  .javascript span{
+    border:1px solid rgb(138,43,226);
+  }
+   @keyframes javascript{
+    100%{
+      width:75%
+    }
+  }
+   .react{
+    background-color:brown;
+    animation:react 1s linear forwards;
+  }
+  .react span{
+    border:1px solid rgb(165,42,42);
+  }
+  @keyframes react{
+    100%{
+      width:75%
+    }
+  }
+   .spring{
+    background-color:cyan;
+    animation:spring 1s linear forwards;
+  }
+  .spring span{
+    border:1px solid rgb(0,255,255);
+  }
+   @keyframes spring{
+    100%{
+      width:80%
+    }
+  }
+   .springboot{
+    background-color:darksalmon;
+    animation:springboot 1s linear forwards;
+  }
+  .springboot span{
+    border:1px solid rgb(233,150,122);
+  }
+   @keyframes springboot{
+    100%{
+      width:80%
+    }
+  }
+   .hibernate{
+    background-color:limegreen;
+    animation:hibernate 1s linear forwards;
+  }
+  .hibernate span{
+    border:1px solid rgb(50,205,50);
+  }
+   @keyframes hibernate{
+    100%{
+      width:75%
+    }
+  }
+   .sql{
+    background-color:maroon;
+    animation:sql 1s linear forwards;
+  }
+  .sql span{
+    border:1px solid rgb(128,0,0);
+  }
+   @keyframes sql{
+    100%{
+      width:85%
+    }
+  }
+   .restapi{
+    background-color:purple;
+    animation:restapi 1s linear forwards;
+  }
+  .restapi span{
+    border:1px solid rgb(128,0,128);
+  }
+   @keyframes restapi{
+    100%{
+      width:75%
+    }
+  }
+   .microservices{
+    background-color:rebeccapurple;
+    animation:microservices 1s linear forwards;
+  }
+  .microservices span{
+    border:1px solid rgb(102,51,153);
+  }
+   @keyframes microservices{
+    100%{
+      width:82%
+    }
+  }
+   .dsa{
+    background-color:yellow;
+    animation:dsa 1s linear forwards;
+  }
+  .dsa span{
+    border:1px solid rgb(255,255,0);
+  }
+   @keyframes dsa{
+    100%{
+      width:85%
+    }
+  }
+   .design-patterns{
+    background-color:mediumspringgreen;
+    animation:design-patterns 1s linear forwards;
+  }
+  .design-patterns span{
+    border:1px solid rgb(0,250,154);
+  }
+   @keyframes design-patterns{
+    100%{
+      width:90%
+    }
+  }
+  .git{
+    background-color: magenta;
+    animation:git 1s linear forwards;
+  }
+  .git span{
+    border:1px solid rgb(255,0,255);
+  }
+   @keyframes git{
+    100%{
+      width:90%
+    }
+  }
+  .servlets{
+    background-color: rgb(90, 9, 229);
+    animation:servlets 1s linear forwards;
+  }
+  .servlets span{
+    border:1px solid rgb(90,9,229);
+  }
+   @keyframes servlets{
+    100%{
+      width:90%
+    }
+  }
+  .jsp{
+    background-color: rgb(225, 246, 65);
+    animation:jsp 1s linear forwards;
+  }
+  .jsp span{
+    border:1px solid rgb(255,246,65);
+  }
+   @keyframes jsp{
+    100%{
+      width:80%
+    }
+  }
+  .jdbc{
+    background-color: rgb(214, 27, 27);
+    animation:jdbc 1s linear forwards;
+  }
+  .jdbc span{
+    border:1x solid rgb(214,27,27);
+  }
+   @keyframes jdbc{
+    100%{
+      width:90%
+    }
+  }
+
+  .skill{
+    padding-top: 80px;
+ padding-right: 300px;
+  }
+
+.certifications-list{
+  padding-top:50px;
+}
+  .skills-certifications{
+    display:flex;
+    justify-content:space-between;
+  }
+ .cert1{
+  height:50px;
+  width:500px;
+  border-radius:12px;
+  background:#222;
+  text-align: center;
+  padding-top:12px;
+  font-size: 15px;
+  font-family: 'Arial';
+
+ }
+.a-cert1{
+  padding-left: 50px;
+    color:aqua;
+}
+
+ .cert2{
+  height:50px;
+  width:500px;
+  border-radius:12px;
+  background:#222;
+  text-align: center;
+  padding-top:12px;
+  font-size: 15px;
+  font-family: 'Arial';
+  margin-top:20px;
+
+ }
+
+ .a-cert2{
+  padding-left: 100px;
+  color:aqua;
+}
+.contact-container{
+  text-align: center;
+}
+.social-media-container{
+  display:flex;
+  justify-content: center;
+  gap:20px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-link i {
+  font-size: 20px;
+  color: white;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.linkedin {
+  background: #0077b5;
+}
+.github {
+  background: #333;
+}
+.twitter {
+  background: #1da1f2;
+}
+.instagram {
+  background: #e1306c;
+}
+.email {
+  background: #d44638;
+}
+
+
+
+
+
